@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mendeleev Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <header>
+        <span>Mendeleev Table App</span>
+      </header>
+
+      <section class="input">
+        <span id="Message">Enter an element</span>
+        <span id="data_field">
+          <input type="text" placeholder="eg. Helium" id="element" />
+          <button id="search">Search</button>
+        </span>
+      </section>
+
+      <section class="output">
+        <div id="loader"></div>
+        <div id="result"></div>
+      </section>
+    </div>
+
+    <!-- babel is a JS compiler - transform new js syntax -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Restaurant menus</title>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body onload="showMenu();">
+      <div class="container">
+         <h1>Today's menu</h1>
+         <div class="filter-dish">
+            <input
+               type="text"
+               id="search-ingredient"
+               placeholder="Write ingredient -- ex.'beef'"
+            />
+            <button id="search-btn" onclick="findMeal();">Search</button>
+            <button
+               id="clear-btn"
+               onclick="clearResults();"
+               style="visibility: hidden"
+            >
+               Clear / Back to Categories
+            </button>
+            <div id="search-result"></div>
+         </div>
+         <div class="container-dishes">
+            <table id="menu-list"></table>
+         </div>
+         <div id="category-meal"></div>
+         <div id="meal-details"></div>
+         <div class="contact">
+            <a href="contact.html"><span>Contact</span></a>
+         </div>
+      </div>
+
+      <script src="script.js"></script>
+   </body>
+</html>

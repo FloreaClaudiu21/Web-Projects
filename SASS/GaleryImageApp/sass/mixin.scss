@@ -1,0 +1,12 @@
+@mixin maximize {
+     width: 100%;
+     height: 100%;
+     min-height: 100vh;
+}
+
+@mixin animated-bg {
+     background: rgb(162, 44, 154);
+     animation: gradient 6s ease infinite reverse;
+     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+     background-size: 400% 400%;
+}

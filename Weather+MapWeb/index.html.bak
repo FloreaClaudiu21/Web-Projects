@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Weather App</title>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="weather-input">
+            <input type="text" id="input" />
+            <button id="show-weather">Afiseaza vremea</button>
+            <button id="show-forecast">Afiseaza prognoza</button>
+         </div>
+         <div class="weather-info-container">
+            <div class="weather-info-header">
+               <h4>Vremea acum</h4>
+               <hr id="horizontal-line" />
+            </div>
+            <div class="weather-container">
+               <div class="weather-info">
+                  <img src="" alt="" id="weather-icon" />
+                  <ul>
+                     <li>Descriere: <span id="description"></span></li>
+                     <li>Umiditate: <span id="humidity"></span></li>
+                     <li>Presiune: <span id="presure"></span></li>
+                     <li>Temperatura curenta: <span id="temp"></span></li>
+                     <li>Minima zilei: <span id="min-temp"></span></li>
+                     <li>Maxima zilei: <span id="max-temp"></span></li>
+                  </ul>
+               </div>
+               <div id="map"></div>
+            </div>
+         </div>
+         <div class="weather-forecast">
+            <h4>Vremea in urmatoarele zile</h4>
+            <hr id="horizontal-line" />
+            <div id="forecast"></div>
+         </div>
+      </div>
+
+      <script src="script.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfqBh3yzvY2pUXMtplK1P6voQnHG80tis&callback=showWeather"></script>
+   </body>
+</html>

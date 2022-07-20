@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book List - Florea Claudiu Valentin</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <form action="" class="book-form">
+                <h1 class="h_1">Add Book</h1>
+                <div class="book-inputs">
+                    <label for="">Title</label>
+                    <input type="text" id="title">
+                </div>
+                <div class="book-inputs">
+                    <label for="author">Author</label>
+                    <input type="text" id="author">
+                </div>
+                <div class="book-inputs">
+                    <label for="isbn">ISBN#</label>
+                    <input type="text" id="isbn">
+                </div>
+                <button id="submitBtn" type="submit">Submit</button>
+            </form>
+            <div class="booksAdded">
+                <table class="table">
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="EN">
+     <head>
+          <meta charset="UTF-8">
+          <title>»» Proiect | Galery Images ««</title>
+          <!-- META LINKS -->
+          <meta name="author" content="Claudiu" />
+          <meta name="keywords" content="Proiect, Imagini, Motor" />
+          <meta name="description" content="Folositi acest site pentru a descoperi imagini noi" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <!-- LINKS OF STYLE -->
+          <link rel="icon" href="./resources/icon.ico" />
+          <link rel="stylesheet" href="./css/main.css" />
+          <link rel="stylesheet" href="./css/media.css" />
+          <link rel="stylesheet" href="./css/fixed.css" />
+          <!---------------------------------------------->
+     </head>
+     <body>
+          <!-- PAGE CONTENT -->
+          <div class="page">
+               <!-- FIXED CONTENT -->
+               <div class="shadow"></div>
+               <div class="bg-h"><img src="./resources/bgimg.jpg" alt="Image not found" /></div>
+               <div class="about_box">
+                    <div class="holder">
+                         <div class="close2">✖</div>
+                         <div class="panel">
+                              <p id="title">About Project</p>
+                              <p id="content">In this project i wanted to create a searching engine where you can
+                                   discover new images and also save them, all the images are from the pixabay.com website</p>
+                         </div>
+                    </div>
+               </div>
+               <div class="image_preview">
+                    <div class="holder">
+                         <div class="close">✖</div>
+                         <img class="photo" src="" alt="Image not found"></img>
+						 <div class="left_arrow"><input type="button" id="symbol" value="⪻"></input></div>
+                         <div class="right_arrow"><input type="button" id="symbol" value="⪼"></input></div>
+                    </div>
+               </div>
+               <div class="error_box"><label id="symbol">✖</label><label id="text"></label></div>
+               <div class="success_box"><label id="symbol">🗸</label><label id="text"></label></div>
+               <!-- MAIN CONTENT -->
+               <div class="content">
+                    <!-- LEFT PANEL -->
+                    <div class="left_p">
+                         <div class="rotate">
+                              <div class="R">
+                                   <p>Choose your language:</p>
+                              </div>
+                              <div class="L">
+                                   <p class="LA" data-lang="en">English</p>
+                                   <p class="LA" data-lang="ro">Romanian</p>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- MAIN PANEL -->
+                    <div class="main_p">
+                         <div class="results">
+                              <div class="header2">
+                                   <label class="title2"></label>
+                              </div>
+                              <div class="c_h">
+                                   <ul class="content3"></ul>
+                              </div>
+                              <div class="footer2">
+                                   <div class="up-panel">▲</div>
+                              </div>
+                         </div>
+                         <div class="content2">
+                              <div class="header">
+                                   <div class="l-p">
+                                        <img src="./resources/logo.ico" alt="Image not found.."></img>
+                                        <label>Photo Galery</label>
+                                   </div>
+                                   <div class="r-p">
+                                        <label class="abp">
+                                             <div class="dot">▼</div>
+                                             About Project
+                                        </label>
+                                        <label>
+                                             <div class="dot">▼</div>
+                                             Change the theme
+                                             <div class="panel">
+                                                  TO-DO
+                                             </div>
+                                        </label>
+                                   </div>
+                              </div>
+                              <div class="main_text">
+                                   <div class="title">
+                                        <div class="t-p-1-h">
+                                             <label class="t-p-1">Wanna discover new images? Search here using this
+                                                  searching website!</label>
+                                        </div>
+                                        <div class="i-h">
+                                             <input class="field" type="search" placeholder="Enter here what you wish to search, and press the button.." maxlength="50" />
+                                             <div class="bar"></div>
+                                             <div class="bar2"></div>
+                                        </div>
+                                        <input class="cautare" type="submit" value="Discover"></input>
+                                   </div>
+                              </div>
+                              <div class="footer"></div>
+                         </div>
+                    </div>
+                    <!-- REST PANEL -->
+                    <div class="rest"></div>
+               </div>
+               <script src="./script/main.js" type="module"></script>
+               <script src="./script/search.js" type="module"></script>
+          </div>
+     </body>
+</html>

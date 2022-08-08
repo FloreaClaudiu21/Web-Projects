@@ -1,0 +1,207 @@
+.ticket-wrapper
+    z-index: 3
+    float: left
+    width: 250px
+    height: 350px
+    transition: 0.3s all ease-in-out
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2)
+    &:hover
+        transform: scale(1.02)
+        box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2)
+    .ticket-content
+        height: 100%
+        border-radius: 10px
+        .ticket-top
+            height: 40%
+            width: 100%
+            overflow: hidden
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        .ticket-bottom
+            height: 60%
+            width: 100%
+            padding: 5px
+            display: flex
+            position: relative
+            justify-content: flex-start
+            flex-direction: column
+            background-color: #272727
+            .ticket-table
+                font-size: 1rem
+                color: #1CA0AC
+                text-align: center
+                text-decoration: underline
+            .ticket-desc
+                padding: 5px
+                font-size: 0.446rem
+                color: #FBF3E8
+                text-align: left
+                word-break: break-all
+            .ticket-createdby
+                padding: 5px
+                color: lighten(#064F70, 20%)
+                overflow: hidden
+                font-size: 13px
+                text-overflow: ellipsis
+            .ticket-complete 
+                left: 50%
+                bottom: 5px
+                border: none
+                font-size: 14px
+                padding: 5px 10px
+                border-radius: 5px
+                position: absolute
+                transform: translateX(-50%)
+                transition: 0.3s all ease-in-out
+                background-color: lighten(red, 30%)
+                &:hover
+                    color: #FFF
+                    background-color: lighten(red, 15%)
+
+.tickets-wrapper
+    width: 100%
+    height: auto
+    display: flex
+    flex: 1
+    align-items: center
+    flex-direction: column
+    justify-content: flex-start
+    .tickets-top
+        width: 100%
+        height: 100px
+        display: flex
+        z-index: 3
+        margin-top: 100px
+        flex-direction: row
+        justify-content: center
+        .tickets-title
+            font-weight: 700
+            font-size: 0.95rem
+            position: relative
+            text-align: center
+            background-image: linear-gradient(to right, #121FCF 0%, #CF1512 100%)
+            text-transform: uppercase
+            text-decoration: underline
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            &::after
+                content: ""
+                position: absolute
+                top: 30px
+                left: 0
+                width: 100%
+                height: 5px
+                margin: 0 auto
+                background-color: red
+                background-image: linear-gradient(to right, #121FCF 0%, #CF1512 100%)
+    .tickets-bottom
+        width: 100%
+        height: auto
+        .tickets-panel
+            width: 100%
+            height: auto
+            display: flex
+            position: relative
+            align-items: center
+            flex-direction: column
+            justify-content: flex-start
+            .tickets-panel-top
+                width: 100%
+                z-index: 3
+                display: flex
+                padding: 7px
+                max-width: 1240px
+                justify-content: center
+                .ticket-info
+                    width: 60%
+                    display: flex
+                    font-size: 16px
+                    align-items: center
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.15)
+                .ticket-add-wrapper
+                    z-index: 4
+                    width: 40%
+                    height: 70px
+                    display: flex
+                    max-width: 1240px
+                    flex-direction: column
+                    align-items: flex-end
+                    justify-content: center
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.15)
+                    .ticket-add-btn
+                        height: 30px
+                        border: none
+                        padding: 4px
+                        display: flex
+                        font-weight: 600
+                        align-items: center
+                        border-radius: 3px
+                        font-size: 10px
+                        transition: 0.2s all ease-in-out
+                        background-color: lighten(green, 20%)
+                        box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.2)
+                        &:hover
+                            color: #FFF
+                            transform: scale(1.02)
+                            text-shadow: 0 0 20px black
+                            background-color: lighten(green, 10%)
+                            box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.2)
+            .blob-tright
+                top: -5%
+                width: 500px
+                position: absolute
+                left: calc(100% - 300px)
+                transform: rotate(90deg)
+            .tickets-noresults
+                width: 100%
+                height: auto
+                max-width: 1024px
+                min-height: 500px
+                max-height: 600px
+            .tickets-content-padding
+                padding: 20px
+                .tickets-content
+                    gap: 20px
+                    z-index: 1
+                    display: grid
+                    min-height: 950px
+                    grid-auto-rows: 350px
+                    grid-template-columns: repeat(1, 250px)
+            .tickets-buttons
+                gap: 5px
+                width: 98%
+                height: 50px
+                z-index: 3
+                margin: 0 auto
+                padding: 8px
+                display: flex
+                max-width: 1240px
+                flex-direction: row
+                justify-content: flex-end
+                border-top: 2px solid rgba(0, 0, 0, 0.15)
+                .btn-active
+                    color: #FFF
+                    background-color: purple
+                    border: 2px solid black !important
+                    &:hover
+                        background-color: darken(purple, 10%) !important
+                .page-btn
+                    width: 40px
+                    height: 30px
+                    border: none
+                    font-size: 0.667rem
+                    border-radius: 10px
+                    transition: 0.2s all ease-in-out
+                    &:hover
+                        background-color: darken(#FFF, 10%)
+@media screen and (min-width: 1240px)
+    .tickets-content
+        grid-template-columns: repeat(4, 250px) !important
+@media screen and (min-width: 640px) and (max-width: 1024px)
+    .tickets-content
+        grid-template-columns: repeat(2, 250px) !important
+@media screen and (min-width: 1024px) and (max-width: 1240px)
+    .tickets-content
+        grid-template-columns: repeat(3, 250px) !important

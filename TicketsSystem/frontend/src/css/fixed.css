@@ -1,0 +1,36 @@
+.fixed-wrapper {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transform: translateZ(-3px) scale(1.2);
+}
+.fixed-wrapper .blob-left {
+  left: 0;
+  width: 15%;
+  height: 55%;
+  position: absolute;
+  top: calc(100vh - 55%);
+}
+.fixed-wrapper .blob-right {
+  width: 15%;
+  height: 35%;
+  position: absolute;
+  left: calc(100vw - 12%);
+  top: calc(100vh - 65%);
+}
+.fixed-wrapper .blob-tright {
+  top: 0;
+  width: 70%;
+  height: 20%;
+  position: absolute;
+  left: calc(100vw - 60%);
+}
+.fixed-wrapper .blob-tleft {
+  top: -12%;
+  width: 75%;
+  height: 55%;
+  position: absolute;
+  transform: rotateZ(-25deg);
+  left: calc( 100vw - 130%);
+}

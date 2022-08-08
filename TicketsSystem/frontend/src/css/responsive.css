@@ -1,0 +1,118 @@
+@media screen and (min-width: 640px) and (max-width: 980px) {
+  .header .header-wrapper .header-auth {
+    padding: 1rem;
+  }
+  .header .header-wrapper .header-auth .header-auth-content {
+    width: 350px;
+    height: 50px;
+  }
+  .header .header-wrapper .header-auth .header-auth-content .header-auth-picture {
+    width: 50px;
+    height: 50px;
+  }
+  .header .header-wrapper .header-auth .header-auth-content .header-auth-name p {
+    font-size: 21px;
+  }
+  .header .header-wrapper .header-auth .header-auth-content .header-auth-logout {
+    font-size: 1rem;
+    min-width: 80px;
+  }
+  .header .header-wrapper .header-auth .header-auth-content .header-auth-login {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .header .header-middle {
+    gap: 25px;
+  }
+  .header .header-middle .header-middle-wrapper {
+    gap: 30px;
+  }
+  .header .header-middle .header-middle-wrapper .header-title {
+    font-size: 30px;
+  }
+  .header .header-middle .header-middle-wrapper .header-discover-btn {
+    font-size: 15px;
+    height: 25%;
+  }
+  .header .header-scroll {
+    font-size: 0.7rem;
+  }
+
+  .tickets-top .tickets-title {
+    font-size: 1.44rem;
+  }
+  .tickets-top .tickets-title::after {
+    top: 45px;
+  }
+
+  .ticket-wrapper {
+    width: 300px;
+    height: 450px;
+  }
+
+  .tickets-bottom .tickets-panel .tickets-panel-top {
+    padding: 1rem;
+  }
+  .tickets-bottom .tickets-panel .tickets-panel-top .ticket-info {
+    font-size: 1.2rem;
+  }
+  .tickets-bottom .tickets-panel .tickets-panel-top .ticket-add-wrapper button {
+    border-radius: 10px;
+    height: 40px;
+    letter-spacing: 3px;
+    padding: 0.7rem;
+    font-size: 16px;
+  }
+  .tickets-bottom .tickets-content {
+    grid-auto-rows: 450px;
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  .footer-text p {
+    font-size: 13px;
+  }
+
+  .forgot-form-btn {
+    font-size: 13px !important;
+  }
+
+  .form-bottom button {
+    font-size: 11px !important;
+  }
+
+  .info-wrapper {
+    width: 250px !important;
+  }
+  .info-wrapper .info-msg {
+    font-size: 12px !important;
+  }
+
+  .page-wrapper-404 .page-bottom img {
+    width: 100% !important;
+  }
+  .page-wrapper-404 .page-bottom a {
+    height: 40px !important;
+    padding: 10px 20px !important;
+  }
+  .page-wrapper-404 .page-bottom a p {
+    font-size: 14px !important;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .tickets-content {
+    grid-auto-rows: 450px;
+    grid-template-columns: repeat(4, 300px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .tickets-content {
+    grid-auto-rows: 450px;
+    grid-template-columns: repeat(3, 300px);
+  }
+}
+@media screen and (min-width: 980px) {
+  .tickets-content {
+    grid-auto-rows: 450px;
+    grid-template-columns: repeat(3, 300px);
+  }
+}
